@@ -1,0 +1,28 @@
+*{box-sizing:border-box}
+:root{
+  --pink:#db2777;
+  --pink-100:#ffe4e6;
+  --pink-200:#fecdd3;
+  --ink:#111827;
+}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;background:linear-gradient(#fde2f3,#fff 40%,#fde2f3)}
+.hero{position:relative;max-width:430px;margin:0 auto}
+.hero-img{width:100%;height:260px;object-fit:cover;display:block;filter:saturate(1) contrast(1.05)}
+.hero-title{position:absolute;left:16px;bottom:34px;margin:0;color:#fff;font-weight:800;font-size:28px;text-shadow:0 2px 8px rgba(0,0,0,.35)}
+.hero-sub{position:absolute;left:16px;bottom:10px;margin:0;color:#fff;font-size:13px;text-shadow:0 2px 8px rgba(0,0,0,.35)}
+.card{max-width:430px;margin:16px auto;padding:24px;background:#fff;border-radius:24px;box-shadow:0 10px 30px rgba(219,39,119,.15);position:relative}
+.pointer{position:absolute;left:50%;top:10px;transform:translateX(-50%);width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:16px solid var(--pink)}
+.wheel-wrap{display:flex;justify-content:center;align-items:center;margin-top:8px}
+.wheel{border-radius:999px;filter:drop-shadow(0 10px 20px rgba(0,0,0,.12));border:1px solid #fda4af;background:#fff;transform:rotate(0deg);transition:transform 3.2s cubic-bezier(.22,1,.36,1)}
+.btn{display:inline-flex;gap:8px;align-items:center;justify-content:center;padding:12px 20px;border-radius:999px;border:0;background:var(--pink);color:#fff;font-weight:700;margin:18px auto 0;box-shadow:0 6px 16px rgba(219,39,119,.35);cursor:pointer}
+.btn:disabled{opacity:.6;cursor:not-allowed}
+.thinking{margin:10px auto 0;text-align:center;color:var(--pink)}
+.result{margin:16px auto 0;padding:16px;background:#fff0f6;border:1px solid #ffcfe0;border-radius:16px;text-align:center}
+.result-label{margin:0;color:#be185d;font-size:14px}
+.result-text{margin:6px 0 0;color:#831843;font-weight:800;font-size:28px}
+.history{margin-top:16px}
+.history-label{margin:0 0 8px;color:#be185d;font-size:12px;letter-spacing:.07em;text-transform:uppercase}
+.history-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.history-grid .pill{background:#fff0f6;border:1px solid #ffcfe0;border-radius:999px;padding:8px 10px;text-align:center;color:#831843;font-size:14px}
+.foot{max-width:430px;margin:24px auto 40px;text-align:center;color:#9d174d;font-size:12px}
+.hidden{display:none}
