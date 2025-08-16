@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hvad skal Lyda lave</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="./lyda.png" alt="Lyda" class="hero-img" />
+    <h1 class="hero-title">Hvad skal Lyda lave</h1>
+    <p class="hero-sub">Tryk på hjulet – lad skæbnen vælge.</p>
+  </header>
+
+  <main class="card">
+    <div class="pointer"></div>
+    <div class="wheel-wrap">
+      <svg id="wheel" class="wheel" viewBox="0 0 280 280" width="280" height="280" aria-label="Lyda-hjulet"></svg>
+    </div>
+
+    <button id="spinBtn" class="btn">✨ Spin the wheel</button>
+
+    <div id="thinking" class="thinking hidden">Lyda tænker…</div>
+
+    <section id="result" class="result hidden">
+      <p class="result-label">Nu skal Lyda:</p>
+      <p id="resultText" class="result-text"></p>
+    </section>
+
+    <section id="historyWrap" class="history hidden">
+      <p class="history-label">Seneste valg</p>
+      <div id="history" class="history-grid"></div>
+    </section>
+  </main>
+
+  <footer class="foot">© <span id="year"></span> Hvad skal Lyda lave</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
